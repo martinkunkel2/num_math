@@ -9,7 +9,7 @@ on:
     - cron: '0 3 * * 6'
 
 jobs:
-  ci:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
