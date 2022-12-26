@@ -7,4 +7,4 @@ cargo check
 cargo test
 cargo doc
 tests_additional/run-tests.sh
-./trace.sh
+
