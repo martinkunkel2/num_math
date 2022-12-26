@@ -18,5 +18,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: install openfasttrace
+      run: sudo curl -L https://github.com/itsallcode/openfasttrace/releases/download/3.6.0/openfasttrace-3.6.0.jar  --output /usr/bin/openfasttrace.jar
+    - name: verify openfasttrace version
+      run: echo "00c034d0d4494a0af9162dd58e39f5d150a3f8e2  /usr/bin/openfasttrace.jar" | shasum -c-
     - name: run openfasttrace
       run: ./trace.sh
